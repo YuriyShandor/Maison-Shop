@@ -1,0 +1,95 @@
+@import "./_components/_MaisonNeue.scss";
+
+@font-face {
+  font-family: Miller-Display;
+  src: url(../static/fonts/Miller-DisplayItalic.otf);
+  font-weight: 400;
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+  //border: 1px solid red;
+
+}
+
+$grey: #6f6f6f;
+
+body {
+  font-family: MaisonNeue, Arial sans-serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+header {
+  width: inherit;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+
+      .navbar {
+        transform: translateY(3px);
+
+        .navbar-toggler-icon {
+          display: none;
+        }
+
+        .navbar-nav {
+          display: flex;
+
+          .nav-item {
+            list-style: none;
+            margin-right: 40px;
+
+            .nav-link {
+              font-size: 16px;
+              text-transform: uppercase;
+              color: $grey;
+              cursor: pointer;
+
+              &:hover {
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+
+      .mobile-site__heading {
+        display: none;
+      }
+
+      .shop-cart {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+}
