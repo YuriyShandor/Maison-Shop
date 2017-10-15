@@ -3,6 +3,6 @@
 // import './js/jquery.nice-select.js';
 // import './js/slick.js';
 
-import './js/script.js';
+import './script.js';
 
-import './scss/base.scss';
+import '../scss/base.scss';

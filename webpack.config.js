@@ -3,11 +3,11 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: path.resolve(__dirname, 'src', 'index.js'),
+  entry: path.resolve(__dirname, 'js'),
 
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/dist',
+    path: path.resolve(__dirname, './'),
+    publicPath: '',
     filename: 'bandle.js'
   },
 
@@ -16,7 +16,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: path.resolve(__dirname, 'src'),
+        exclude: /node_modules/,
         options: {
           presets: ['es2015']
         }
@@ -28,7 +28,7 @@ module.exports = {
           fallback: 'style-loader',
           use: 'css-loader?url=false!postcss-loader!sass-loader',
         }),
-        include: path.resolve(__dirname, 'src'),
+        exclude: /node_modules/,
       },
     ]
   },
@@ -41,6 +41,6 @@ module.exports = {
   },
 
   plugins: [
-    new ExtractTextPlugin('style.css')
+    new ExtractTextPlugin('./scss/style.css')
   ]
 };

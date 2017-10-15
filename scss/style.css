@@ -3237,22 +3237,22 @@ template {
 /*** ================================== ***/
 @font-face {
   font-family: MaisonNeue;
-  src: url(../static/fonts/MaisonNeue/MaisonNeue-Bold.otf);
+  src: url(../fonts/MaisonNeue/MaisonNeue-Bold.otf);
   font-weight: 700; }
 
 @font-face {
   font-family: MaisonNeue;
-  src: url(../static/fonts/MaisonNeue/MaisonNeue-Mono.otf);
+  src: url(../fonts/MaisonNeue/MaisonNeue-Mono.otf);
   font-weight: 400; }
 
 @font-face {
   font-family: MaisonNeue;
-  src: url(../static/fonts/MaisonNeue/MaisonNeue-Medium.otf);
+  src: url(../fonts/MaisonNeue/MaisonNeue-Medium.otf);
   font-weight: 500; }
 
 @font-face {
   font-family: Miller-Display;
-  src: url(../static/fonts/Miller-DisplayItalic.otf);
+  src: url(../fonts/Miller-DisplayItalic.otf);
   font-weight: 400;
   font-style: italic; }
 
@@ -3451,11 +3451,11 @@ header {
             color: #000;
             text-decoration: none; }
   .top-slider__section .top-slider .top-slider__slide_01 {
-    background: url(../../static/img/top-slider__img_01.jpg) no-repeat center/cover; }
+    background: url(../img/top-slider__img_01.jpg) no-repeat center/cover; }
   .top-slider__section .top-slider .top-slider__slide_02 {
-    background: url(../../static/img/top-slider__img_02.jpg) no-repeat center/cover; }
+    background: url(../img/top-slider__img_02.jpg) no-repeat center/cover; }
   .top-slider__section .top-slider .top-slider__slide_03 {
-    background: url(../../static/img/top-slider__img_01.jpg) no-repeat center/cover; }
+    background: url(../img/top-slider__img_01.jpg) no-repeat center/cover; }
   .top-slider__section .slider-count {
     position: absolute;
     right: 0;

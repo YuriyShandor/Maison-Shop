@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: Miller-Display;
-  src: url(../static/fonts/Miller-DisplayItalic.otf);
+  src: url(../dist/fonts/Miller-DisplayItalic.otf);
   font-weight: 400;
   font-style: italic;
 }
@@ -272,15 +272,15 @@ header {
     }
 
     .top-slider__slide_01 {
-      background: url(../../static/img/top-slider__img_01.jpg) no-repeat center / cover;
+      background: url(../img/top-slider__img_01.jpg) no-repeat center / cover;
     }
 
     .top-slider__slide_02 {
-      background: url(../../static/img/top-slider__img_02.jpg) no-repeat center / cover;
+      background: url(../img/top-slider__img_02.jpg) no-repeat center / cover;
     }
 
     .top-slider__slide_03 {
-      background: url(../../static/img/top-slider__img_01.jpg) no-repeat center / cover;
+      background: url(../img/top-slider__img_01.jpg) no-repeat center / cover;
     }
   }
 
