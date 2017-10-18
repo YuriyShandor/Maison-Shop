@@ -9,6 +9,16 @@ $(document).ready(function() {
     slidesToScroll: 1,
     nextArrow: $("#top-slider__next-arrow"),
     prevArrow: $("#top-slider__prew-arrow"),
+    responsive: [
+      {
+        breakpoint: 1200,
+
+        settings: {
+          dots: true,
+          dotsClass: 'slick-dots_maison-top-slider',
+        }
+      }
+    ]
   });
   $('.top-slider')
    .on('afterChange', function(event, slick, currentSlide, nextSlide){
